@@ -9,7 +9,7 @@
 # Purpose  : This script will allow you to display bind9 stats via SNMP.
 #          : A Network Monitoring can then use those stats to build rrd
 #          : graphs representing DNS stats.
-# License  : Artistic Perl 2.0
+# License  : Apache 2.0 License.
 # (C) 2010 : Gerald L. Hevener, M.S., and Eric G. Wolfe
 
 #enable strict and warnings
