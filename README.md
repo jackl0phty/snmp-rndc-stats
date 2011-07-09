@@ -6,7 +6,7 @@ command-line utility which will allow you to display [Bind9](http://www.isc.org/
 stats via [SNMP](http://en.wikipedia.org/wiki/Simple_Network_Management_Protocol).
 A Network Monitoring solution such as [Zenoss](http://www.zenoss.com/)
 or [Nagios](http://www.nagios.org/) can then use those stats to build graphs using 
-[RRDtool](http://www.mrtg.org/rrdtool/) representing DNS stats.
+[RRDtool](http://www.mrtg.org/rrdtool/) representing [DNS](http://en.wikipedia.org/wiki/Domain_Name_System) stats.
 
 LICENSE:
 ==========
