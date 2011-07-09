@@ -2,7 +2,7 @@ DESCRIPTION:
 ==============
 
 * __snmp_rndc_stats.pl__ is a [Perl](http://www.perl.org/)
-command-line utility which will allow you to display Bind9
+command-line utility which will allow you to display [Bind9](http://www.isc.org/software/bind)
 stats via [SNMP](http://en.wikipedia.org/wiki/Simple_Network_Management_Protocol).
 A Network Monitoring solution such as [Zenoss](http://www.zenoss.com/)
 or [Nagios](http://www.nagios.org/) can then use those stats to build graphs using 
