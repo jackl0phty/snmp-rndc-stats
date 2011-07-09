@@ -40,7 +40,7 @@ OPTIONAL-COMMAND-LINE-ARGUMENTS:
 
 + __--recursion__ Prints rndc recursion stats.
 
-__--failure__ Prints rndc failure stats.
++ __--failure__ Prints rndc failure stats.
 
 + __--all__ Prints all rndc stats.
 
@@ -62,11 +62,11 @@ USAGE:
 However, the following optional commands are supported:
 
 <pre><code>
-+ ./snmp_rndc_stats.pl --success
-+ ./snmp_rndc_stats.pl --referral
-+ ./snmp_rndc_stats.pl --nxrrset
-+ ./snmp_rndc_stats.pl --nxdomain
-+ ./snmp_rndc_stats.pl --recursion
-+ ./snmp_rndc_stats.pl --failure
-+ ./snmp_rndc_stats.pl --all
+./snmp_rndc_stats.pl --success
+./snmp_rndc_stats.pl --referral
+./snmp_rndc_stats.pl --nxrrset
+./snmp_rndc_stats.pl --nxdomain
+./snmp_rndc_stats.pl --recursion
+./snmp_rndc_stats.pl --failure
+./snmp_rndc_stats.pl --all
 </code></pre>
