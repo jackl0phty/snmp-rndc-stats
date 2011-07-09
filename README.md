@@ -70,3 +70,17 @@ However, the following optional commands are supported:
 ./snmp_rndc_stats.pl --failure
 ./snmp_rndc_stats.pl --all
 </code></pre>
+
+NOTE-ABOUT-BINARY/FILE LOCATIONS:
+=================================
+
+*__snmp_rndc_stats.pl__ expects the following to present on your system.
+
++ /usr/sbin/rndc   # Your rndc binary.
+
++ /var/named/data/named_stats.txt     # Your rndc stats file.
+
+* If you have things installed in different locations, such as Bind9 in a
+chroot/jail environment, and would like to use this script, we would 
+graciously accept a patch! Perhaps your patch could use [GetOpt::Declare](http://search.cpan.org/~fangly/Getopt-Declare-1.14/lib/Getopt/Declare.pm)
+to accept locations of rndc binary and stats file as cmd-line options.
