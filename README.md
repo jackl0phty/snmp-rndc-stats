@@ -74,7 +74,7 @@ However, the following optional commands are supported:
 NOTE-ABOUT-BINARY/FILE LOCATIONS:
 =================================
 
-*__snmp_rndc_stats.pl__ expects the following to present on your system.
+__snmp_rndc_stats.pl__ expects the following to present on your system.
 
 + /usr/sbin/rndc   # Your rndc binary.
 
