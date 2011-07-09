@@ -1,4 +1,4 @@
-- DESCRIPTION:
+DESCRIPTION:
 ==============
 
 * __snmp_rndc_stats.pl__ is a [Perl](http://www.perl.org/)
@@ -8,13 +8,13 @@ A Network Monitoring solution such as [Zenoss](http://www.zenoss.com/)
 or [Nagios](http://www.nagios.org/) can then use those stats to build graphs using 
 [RRDtool](http://www.mrtg.org/rrdtool/) representing DNS stats.
 
-- LICENSE:
+LICENSE:
 ==========
 
 + This software is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 A copy of the licese is also available in the LICENSE file of this repo.
 
-- REQUIREMENTS:
+REQUIREMENTS:
 ===============
 
 +  __snmp_rndc_stats.pl__ should be executed on the server running 
@@ -27,7 +27,7 @@ to allow SNMP connections from your network monitor.
 However, the output is meant to be passed to SNMPD. Therefore, the output
 may appear to you as a useless string of numbers without a newline at the end.
 
-- OPTIONAL-COMMAND-LINE-ARGUMENTS:
+OPTIONAL-COMMAND-LINE-ARGUMENTS:
 ==================================
 
 + __--success__ Prints rndc success stats.
@@ -44,23 +44,24 @@ __--failure__ Prints rndc failure stats.
 
 + __--all__ Prints all rndc stats.
 
-- DIAGNOSTICS:
+DIAGNOSTICS:
 =============
 
 + The only errors generated are file open errors.  Carp confess is used to
 generate a backtrace of any resulting errors.
 
-- ATTRIBUTES:
+ATTRIBUTES:
 =============
 
 + There are currently no attributes for this cookbook.
 
-- USAGE:
+USAGE:
 ========
 
 + As previously mentioned, this script is meant to send output to SNMPD.
 However, the following optional commands are supported:
 
+<pre><code>
 + ./snmp_rndc_stats.pl --success
 + ./snmp_rndc_stats.pl --referral
 + ./snmp_rndc_stats.pl --nxrrset
@@ -68,3 +69,4 @@ However, the following optional commands are supported:
 + ./snmp_rndc_stats.pl --recursion
 + ./snmp_rndc_stats.pl --failure
 + ./snmp_rndc_stats.pl --all
+</code></pre>
