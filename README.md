@@ -11,52 +11,54 @@ or [Nagios](http://www.nagios.org/) can then use those stats to build graphs usi
 - LICENSE:
 ==========
 
-* This software is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
++ This software is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 A copy of the licese is also available in the LICENSE file of this repo.
 
 - REQUIREMENTS:
 ===============
 
-*  __snmp_rndc_stats.pl__ should be executed on the server running 
++  __snmp_rndc_stats.pl__ should be executed on the server running 
 your Network monitoring solution such as Zenoss or Nagios.
 
-* Ensure firewall access has been granted on your Bind9 server
++ Ensure firewall access has been granted on your Bind9 server
 to allow SNMP connections from your network monitor.
 
-* You may test the output of __snmp_rndc_stats.pl__, by running it manually.
++ You may test the output of __snmp_rndc_stats.pl__, by running it manually.
 However, the output is meant to be passed to SNMPD. Therefore, the output
 may appear to you as a useless string of numbers without a newline at the end.
 
 - OPTIONAL-COMMAND-LINE-ARGUMENTS:
 ==================================
 
-__--success__ Prints rndc success stats.
++ __--success__ Prints rndc success stats.
 
-__--referral__ Prints rndc referral stats.
++ __--referral__ Prints rndc referral stats.
 
-__--nxrrset__ Prints rndc nxrrset stat.
++ __--nxrrset__ Prints rndc nxrrset stat.
 
-__--nxdomain__ Prints rndc nxdomain stats.
++ __--nxdomain__ Prints rndc nxdomain stats.
 
-__--recursion__ Prints rndc recursion stats.
++ __--recursion__ Prints rndc recursion stats.
 
 __--failure__ Prints rndc failure stats.
 
-__--all__ Prints all rndc stats.
++ __--all__ Prints all rndc stats.
 
-- DIAGNOSTICS
+- DIAGNOSTICS:
 =============
 
-The only errors generated are file open errors.  Carp confess is used to
++ The only errors generated are file open errors.  Carp confess is used to
 generate a backtrace of any resulting errors.
 
-= ATTRIBUTES:
+- ATTRIBUTES:
+=============
 
-* There are currently no attributes for this cookbook.
++ There are currently no attributes for this cookbook.
 
-= USAGE:
+- USAGE:
+========
 
-* As previously mentioned, this script is meant to send output to SNMPD.
++ As previously mentioned, this script is meant to send output to SNMPD.
 However, the following optional commands are supported:
 
 + ./snmp_rndc_stats.pl --success
